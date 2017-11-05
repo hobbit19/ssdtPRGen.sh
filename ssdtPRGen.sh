@@ -4144,12 +4144,12 @@ function _getScriptArguments()
 
                   -cpus) shift
 
-                      if [[ "$1" =~ ^[1-4]+$ ]];
+                      if [[ "$1" =~ ^[1-6]+$ ]];
                         then
                           #
                           # Sanity checking.
                           #
-                          if [[ $1 -gt 0 && $1 -lt 5 ]];
+                          if [[ $1 -gt 0 && $1 -lt 7 ]];
                             then
                               let gPhysicalCPUs=$1
                               _PRINT_MSG "Override value: (-cpus) number of processors, now using: ${1}!"
